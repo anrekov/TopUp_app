@@ -1,38 +1,103 @@
-.App {
+.main,
+.deposit {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-size: large;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  margin-top: 20vh;
+  max-width: 40vw;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  background-color: rgba(253, 255, 245, 0.8);
+  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.deposit {
+  background-color: rgba(253, 255, 245, 0.8);
+  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.15);
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:last-child {
+  margin-top: 10px;
+}
+
+.operator {
+  min-width: 100px;
+  margin-bottom: 10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.operator:hover {
+  background-color: rgb(247, 233, 233);
+}
+
+/* Deposit */
+.form {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: 24px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border: solid 1px #eee;
+  border-radius: 24px;
+  background-color: rgb(248, 230, 245);
+}
+
+.input {
+  line-height: 1.5em;
+  border-radius: 4px;
+  border: solid 1px #eee;
+  padding: 4px 6px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+}
+
+.sendBtn {
+  padding: 5px;
+  margin-right: 50px;
+  background-color: rgb(224, 242, 255);
+  border: 1px solid rgb(217, 228, 238);
+  border-radius: 5px;
+}
+
+.sendBtn:hover {
+  border-color: grey;
+}
+
+h2 {
+  text-align: center;
+}
+
+p span {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .form {
+    padding: 15px;
+    width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  .sendBtn {
+    margin-right: 10px;
   }
 }
