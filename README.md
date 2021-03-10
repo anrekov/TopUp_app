@@ -21,3 +21,7 @@ import MaskedInput from 'react-text-mask';
 
 const phoneRegExp = /^\+?[78]\s?[-\\(]?\d{3}\)?\s?-?\d{3}-?\d{2}-?\d{2}$/; // +7 (953) 092-93-17
 ```
+
+### Heroku:
+
+https://still-sea-65374.herokuapp.com/deposit/Megafon
